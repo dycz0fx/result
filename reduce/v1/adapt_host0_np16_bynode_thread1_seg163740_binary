@@ -1,0 +1,55 @@
+ benchmarks to run Reduce 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Sun Sep 13 16:26:01 2015
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.0.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Mon May 18 12:45:35 EDT 2015
+# MPI Version           : 3.0
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-MPI1 Reduce -msglen /home/dycz0fx/Lengths -npmin 16 -iter 1000
+#                                        -time 20
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Reduce
+
+#----------------------------------------------------------------
+# Benchmarking Reduce 
+# #processes = 16 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+        65536          800      2925.46      2932.91      2929.17
+       131072          656      4927.14      4946.76      4936.35
+       262144          496      6689.29      6718.09      6702.25
+       524288          320     10035.53     10091.24     10060.60
+      1048576          192     15322.76     15429.74     15374.99
+      2097152           96     26099.81     26364.37     26213.39
+      4194304           48     50026.38     50737.95     50333.31
+
+
+# All processes entering MPI_Finalize
+

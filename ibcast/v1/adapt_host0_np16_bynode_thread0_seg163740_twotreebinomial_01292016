@@ -1,0 +1,55 @@
+ benchmarks to run Ibcast 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-NBC part  
+#------------------------------------------------------------
+# Date                  : Mon Feb  1 01:44:49 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.0.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Mon May 18 12:45:35 EDT 2015
+# MPI Version           : 3.0
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-NBC Ibcast -msglen /home/dycz0fx/Lengths -npmin 16 -iter 1000
+#                                      
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Ibcast
+
+#-----------------------------------------------------------------------------
+# Benchmarking Ibcast 
+# #processes = 16 
+#-----------------------------------------------------------------------------
+       #bytes #repetitions t_ovrl[usec] t_pure[usec]  t_CPU[usec]   overlap[%]
+        65536          800      4151.67      2284.28      2292.44        18.54
+       131072          656      6452.97      3537.44      3543.59        17.72
+       262144          496     12913.18      6557.23      6557.78         3.08
+       524288          320     19537.73     10095.04     10098.02         6.49
+      1048576          192     40810.38     17786.59     17773.78         0.00
+      2097152           96     60170.77     27765.41     27771.39         0.00
+      4194304           48     96834.75     43318.16     43301.16         0.00
+
+
+# All processes entering MPI_Finalize
+

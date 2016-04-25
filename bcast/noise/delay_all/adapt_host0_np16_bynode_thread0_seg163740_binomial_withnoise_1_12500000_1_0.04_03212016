@@ -1,0 +1,71 @@
+ benchmarks to run Bcast 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Mon Mar 21 14:56:10 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.0.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Mon May 18 12:45:35 EDT 2015
+# MPI Version           : 3.0
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-MPI1 Bcast -msglen /home/dycz0fx/Lengths -npmin 16 -iter 1000
+#                                       
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Bcast
+create noise in us: start 1458586571821054 end 1458586571862297 interval 1000014 noise 41243
+create noise in us: start 1458586571821478 end 1458586571862717 interval 1000017 noise 41239
+create noise in us: start 1458586571821775 end 1458586571863019 interval 1000017 noise 41244
+create noise in us: start 1458586571822211 end 1458586571863455 interval 1000018 noise 41244
+create noise in us: start 1458586571822266 end 1458586571863511 interval 1000016 noise 41245
+create noise in us: start 1458586571823482 end 1458586571864747 interval 1000017 noise 41265
+create noise in us: start 1458586571823185 end 1458586571864422 interval 1000015 noise 41237
+create noise in us: start 1458586571823495 end 1458586571864741 interval 1000017 noise 41246
+create noise in us: start 1458586571822892 end 1458586571864142 interval 1000017 noise 41250
+create noise in us: start 1458586571823957 end 1458586571865216 interval 1000018 noise 41259
+create noise in us: start 1458586571823570 end 1458586571864813 interval 1000016 noise 41243
+create noise in us: start 1458586571823563 end 1458586571864815 interval 1000016 noise 41252
+create noise in us: start 1458586571824204 end 1458586571865482 interval 1000016 noise 41278
+create noise in us: start 1458586571823757 end 1458586571864989 interval 1000018 noise 41232
+create noise in us: start 1458586571824939 end 1458586571866193 interval 1000017 noise 41254
+create noise in us: start 1458586571824902 end 1458586571866154 interval 1000014 noise 41252
+
+#----------------------------------------------------------------
+# Benchmarking Bcast 
+# #processes = 16 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+        65536          800      2383.76      2387.78      2385.35
+       131072          656      3771.97      3778.45      3775.21
+       262144          496      7561.95      7576.22      7570.67
+       524288          320     12142.52     12172.03     12158.76
+      1048576          192     22143.48     22186.76     22168.51
+      2097152           96     42402.88     42544.31     42478.49
+      4194304           48     82226.87     82552.68     82441.04
+
+
+# All processes entering MPI_Finalize
+

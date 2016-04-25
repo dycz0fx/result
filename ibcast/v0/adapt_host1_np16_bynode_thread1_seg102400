@@ -1,0 +1,82 @@
+ benchmarks to run Ibcast 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-NBC part  
+#------------------------------------------------------------
+# Date                  : Sun Aug  9 22:34:43 2015
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.0.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Mon May 18 12:45:35 EDT 2015
+# MPI Version           : 3.0
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-NBC Ibcast -msglen /home/dycz0fx/Lengths -npmin 8
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Ibcast
+
+#-----------------------------------------------------------------------------
+# Benchmarking Ibcast 
+# #processes = 8 
+# ( 8 additional processes waiting in MPI_Barrier)
+#-----------------------------------------------------------------------------
+       #bytes #repetitions t_ovrl[usec] t_pure[usec]  t_CPU[usec]   overlap[%]
+          512         1000       223.69       146.26       151.04        48.74
+         1024         1000       246.32       161.04       165.73        48.55
+         2048         1000       297.78       199.96       205.96        52.51
+         4096         1000       345.37       233.28       257.88        56.54
+         8192         1000       433.61       291.05       302.35        52.85
+        16384         1000       618.57       423.03       436.88        55.24
+        32768         1000      1018.50       690.26       716.40        54.18
+        65536          640      2227.87      1691.54      1877.21        71.43
+       131072          320      3069.19      2350.14      2457.84        70.74
+       262144          160      5580.42      4434.19      4625.84        75.22
+       524288           80     10099.98      8260.11      8670.13        78.78
+      1048576           40     19202.77     15758.82     16575.16        79.22
+      2097152           20     36287.88     29521.93     35897.09        81.15
+      4194304           10     73619.63     60408.33     73571.05        82.04
+
+#-----------------------------------------------------------------------------
+# Benchmarking Ibcast 
+# #processes = 16 
+#-----------------------------------------------------------------------------
+       #bytes #repetitions t_ovrl[usec] t_pure[usec]  t_CPU[usec]   overlap[%]
+          512         1000       239.56       156.34       171.36        51.43
+         1024         1000       260.53       170.88       176.51        49.21
+         2048         1000       309.61       207.08       214.57        52.22
+         4096         1000       356.33       237.35       263.78        54.89
+         8192         1000       436.20       296.76       308.12        54.75
+        16384         1000       626.52       419.91       437.01        52.72
+        32768         1000       991.84       683.76       771.02        60.04
+        65536          640      2311.44      1731.85      1804.56        67.88
+       131072          320      3315.03      2482.15      2843.00        70.70
+       262144          160      6420.16      5094.88      5875.98        77.45
+       524288           80     11367.29      8761.20     10310.66        74.72
+      1048576           40     22021.58     17433.49     18281.38        74.90
+      2097152           20     45358.09     37123.93     43706.22        81.16
+      4194304           10     94088.92     80160.75     94027.73        85.19
+
+
+# All processes entering MPI_Finalize
+

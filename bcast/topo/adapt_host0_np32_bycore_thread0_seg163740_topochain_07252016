@@ -1,0 +1,55 @@
+ benchmarks to run Bcast 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Mon Jul 25 09:27:26 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.5.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Thu May 12 15:15:24 EDT 2016
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-MPI1 Bcast -msglen /home/dycz0fx/Lengths -npmin 32 -iter 1000
+#                                       
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Bcast
+
+#----------------------------------------------------------------
+# Benchmarking Bcast 
+# #processes = 32 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+        65536          640       257.02       258.36       257.80
+       131072          480       444.21       446.76       445.84
+       262144          320       734.55       740.13       738.36
+       524288          192      1223.18      1237.26      1233.11
+      1048576           96      2171.18      2215.79      2203.98
+      2097152           32      3934.35      4159.93      4104.31
+      4194304           32      7509.87      7885.35      7798.38
+
+
+# All processes entering MPI_Finalize
+

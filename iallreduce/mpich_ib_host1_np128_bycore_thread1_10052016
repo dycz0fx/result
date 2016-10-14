@@ -1,0 +1,64 @@
+ benchmarks to run Iallreduce 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-NBC part  
+#------------------------------------------------------------
+# Date                  : Thu Oct  6 00:30:39 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.7.5-1.el6.elrepo.x86_64
+# Version               : #1 SMP Sat Sep 24 11:59:14 EDT 2016
+# MPI Version           : 3.0
+# MPI Thread Environment: MPI_THREAD_MULTIPLE
+
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# ./IMB-NBC Iallreduce -npmin 128 -iter 1000 -time 100
+#          
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Iallreduce
+
+#------------------------------------------------------------------------------------------
+# Benchmarking Iallreduce 
+# #processes = 128 
+#------------------------------------------------------------------------------------------
+       #bytes #repetitions t_ovrl[usec] t_pure[usec]  t_CPU[usec]   overlap[%]      defects
+            0          896       442.72       215.23       225.32         0.00         0.00
+            4          896       597.59       205.31       225.47         0.00         0.00
+            8          896       466.31       207.03       219.58         0.00         0.00
+           16          896       426.09       213.32       215.68         1.35         0.00
+           32          896       451.13       208.06       225.57         0.00         0.00
+           64          896       537.84       218.57       220.64         0.00         0.00
+          128          896       618.17       238.68       240.84         0.00         0.00
+          256          896       707.41       258.40       292.19         0.00         0.00
+          512          896       828.41       330.16       364.20         0.00         0.00
+         1024          896      1380.94       546.11       551.01         0.00         0.00
+         2048          896      2272.11       966.26       973.97         0.00         0.00
+         4096          768      3742.22      1720.99      1738.01         0.00         0.00
+         8192          768      6251.72      3026.49      3031.66         0.00         0.00
+        16384          640     10405.15      4991.26      5031.50         0.00         0.00
+        32768          384     17854.08      9826.17      9974.48        19.52         0.00
+        65536          256     29788.02     18855.15     11149.95         1.15         0.00
+[mpiexec@dancer.icl.utk.edu] Sending Ctrl-C to processes as requested
+[mpiexec@dancer.icl.utk.edu] Press Ctrl-C again to force abort

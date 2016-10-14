@@ -1,0 +1,140 @@
+[6]: Profile MPI_Init.
+[7]: Profile MPI_Init.
+[8]: Profile MPI_Init.
+[12]: Profile MPI_Init.
+[3]: Profile MPI_Init.
+[5]: Profile MPI_Init.
+[13]: Profile MPI_Init.
+[11]: Profile MPI_Init.
+[9]: Profile MPI_Init.
+[2]: Profile MPI_Init.
+[0]: Profile MPI_Init.
+[10]: Profile MPI_Init.
+[15]: Profile MPI_Init.
+[14]: Profile MPI_Init.
+[4]: Profile MPI_Init.
+[1]: Profile MPI_Init.
+num_children = 4
+[4] parent 23945 child 23948
+[4] child 23948, core_id 3
+[3] parent 23945 child 23949
+[3] child 23949, core_id 2
+[2] parent 23945 child 23950
+[1] parent 23945 child 23951
+[2] child 23950, core_id 1
+[1] child 23951, core_id 0
+ benchmarks to run Allreduce 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Mon May  2 23:07:55 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.0.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Mon May 18 12:45:35 EDT 2015
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-MPI1-NOISE Allreduce -msglen /home/dycz0fx/Lengths -npmin 16 -iter 1000
+#                                             
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Allreduce
+[pid = 23948] Create noise in us: start 1462244875172587 end 1462244875218529 interval 1462244875172549 noise 45942 start_v 284 end_v 46208 interval_v 284 noise_v 45924
+[pid = 23949] Create noise in us: start 1462244875172864 end 1462244875218810 interval 1462244875172835 noise 45946 start_v 231 end_v 46158 interval_v 230 noise_v 45927
+[pid = 23951] Create noise in us: start 1462244875173563 end 1462244875223751 interval 1462244875173537 noise 50188 start_v 241 end_v 50409 interval_v 241 noise_v 50168
+[pid = 23950] Create noise in us: start 1462244875173433 end 1462244875245408 interval 1462244875173402 noise 71975 start_v 234 end_v 46181 interval_v 233 noise_v 45947
+[pid = 23948] Create noise in us: start 1462244875272525 end 1462244875318463 interval 53995 noise 45938 start_v 46242 end_v 92160 interval_v 33 noise_v 45918
+[pid = 23950] Create noise in us: start 1462244875273385 end 1462244875319320 interval 27976 noise 45935 start_v 46206 end_v 92122 interval_v 24 noise_v 45916
+[pid = 23951] Create noise in us: start 1462244875273525 end 1462244875323509 interval 49772 noise 49984 start_v 50441 end_v 100099 interval_v 32 noise_v 49658
+[pid = 23949] Create noise in us: start 1462244875272825 end 1462244875357809 interval 54014 noise 84984 start_v 46185 end_v 92133 interval_v 27 noise_v 45948
+[pid = 23948] Create noise in us: start 1462244875372527 end 1462244875418473 interval 54063 noise 45946 start_v 92188 end_v 138115 interval_v 27 noise_v 45927
+[pid = 23949] Create noise in us: start 1462244875372823 end 1462244875418764 interval 15013 noise 45941 start_v 92155 end_v 138078 interval_v 21 noise_v 45923
+[pid = 23950] Create noise in us: start 1462244875373383 end 1462244875419323 interval 54062 noise 45940 start_v 92138 end_v 138060 interval_v 16 noise_v 45922
+[pid = 23951] Create noise in us: start 1462244875373525 end 1462244875448861 interval 50015 noise 75336 start_v 100138 end_v 149446 interval_v 38 noise_v 49308
+[pid = 23948] Create noise in us: start 1462244875472527 end 1462244875518483 interval 54052 noise 45956 start_v 138141 end_v 184079 interval_v 26 noise_v 45938
+[pid = 23949] Create noise in us: start 1462244875472821 end 1462244875518771 interval 54056 noise 45950 start_v 138093 end_v 184024 interval_v 15 noise_v 45931
+[pid = 23950] Create noise in us: start 1462244875473387 end 1462244875519411 interval 54062 noise 46024 start_v 138078 end_v 184006 interval_v 17 noise_v 45928
+[pid = 23951] Create noise in us: start 1462244875473523 end 1462244875548418 interval 24660 noise 74895 start_v 149472 end_v 198338 interval_v 25 noise_v 48866
+[pid = 23948] Create noise in us: start 1462244875572525 end 1462244875618459 interval 54040 noise 45934 start_v 184103 end_v 230018 interval_v 23 noise_v 45915
+[pid = 23949] Create noise in us: start 1462244875572820 end 1462244875618758 interval 54048 noise 45938 start_v 184040 end_v 229958 interval_v 15 noise_v 45918
+[pid = 23951] Create noise in us: start 1462244875573522 end 1462244875623850 interval 25103 noise 50328 start_v 198363 end_v 248670 interval_v 24 noise_v 50307
+[pid = 23950] Create noise in us: start 1462244875573394 end 1462244875645370 interval 53981 noise 71976 start_v 184033 end_v 229979 interval_v 27 noise_v 45946
+[pid = 23948] Create noise in us: start 1462244875672525 end 1462244875718469 interval 54064 noise 45944 start_v 230043 end_v 275968 interval_v 24 noise_v 45925
+[pid = 23949] Create noise in us: start 1462244875672822 end 1462244875718765 interval 54063 noise 45943 start_v 229974 end_v 275899 interval_v 16 noise_v 45925
+[pid = 23950] Create noise in us: start 1462244875673384 end 1462244875719324 interval 28013 noise 45940 start_v 229999 end_v 275920 interval_v 19 noise_v 45921
+[pid = 23951] Create noise in us: start 1462244875673524 end 1462244875748636 interval 49672 noise 75112 start_v 248695 end_v 297779 interval_v 24 noise_v 49084
+[pid = 23949] Create noise in us: start 1462244875772821 end 1462244875818760 interval 54055 noise 45939 start_v 275915 end_v 321835 interval_v 15 noise_v 45920
+[pid = 23950] Create noise in us: start 1462244875773388 end 1462244875819405 interval 54062 noise 46017 start_v 275939 end_v 321862 interval_v 19 noise_v 45923
+[pid = 23951] Create noise in us: start 1462244875773523 end 1462244875823504 interval 24886 noise 49981 start_v 297805 end_v 347767 interval_v 26 noise_v 49962
+[pid = 23948] Create noise in us: start 1462244875772527 end 1462244875844501 interval 54056 noise 71974 start_v 275996 end_v 321942 interval_v 27 noise_v 45946
+[pid = 23948] Create noise in us: start 1462244875872523 end 1462244875918465 interval 28021 noise 45942 start_v 321964 end_v 367888 interval_v 22 noise_v 45924
+[pid = 23949] Create noise in us: start 1462244875872827 end 1462244875918854 interval 54065 noise 46027 start_v 321857 end_v 367786 interval_v 21 noise_v 45929
+[pid = 23950] Create noise in us: start 1462244875873387 end 1462244875919327 interval 53981 noise 45940 start_v 321881 end_v 367803 interval_v 18 noise_v 45922
+[pid = 23951] Create noise in us: start 1462244875873526 end 1462244875960233 interval 50021 noise 86707 start_v 347793 end_v 395462 interval_v 25 noise_v 47669
+[pid = 23950] Create noise in us: start 1462244875973388 end 1462244876019339 interval 54060 noise 45951 start_v 367823 end_v 413755 interval_v 19 noise_v 45932
+[pid = 23951] Create noise in us: start 1462244875973547 end 1462244876023405 interval 13313 noise 49858 start_v 395512 end_v 445351 interval_v 49 noise_v 49839
+[pid = 23948] Create noise in us: start 1462244875972526 end 1462244876031475 interval 54060 noise 58949 start_v 367910 end_v 413837 interval_v 22 noise_v 45927
+[pid = 23949] Create noise in us: start 1462244875972822 end 1462244876031768 interval 53967 noise 58946 start_v 367806 end_v 413731 interval_v 20 noise_v 45925
+[pid = 23948] Create noise in us: start 1462244876072523 end 1462244876118465 interval 41047 noise 45942 start_v 413860 end_v 459783 interval_v 23 noise_v 45923
+[pid = 23950] Create noise in us: start 1462244876073387 end 1462244876119343 interval 54047 noise 45956 start_v 413784 end_v 459722 interval_v 29 noise_v 45938
+[pid = 23949] Create noise in us: start 1462244876072823 end 1462244876131783 interval 41054 noise 58960 start_v 413752 end_v 459689 interval_v 21 noise_v 45937
+[pid = 23951] Create noise in us: start 1462244876073524 end 1462244876135944 interval 50117 noise 62420 start_v 445379 end_v 494685 interval_v 27 noise_v 49306
+[pid = 23948] Create noise in us: start 1462244876172526 end 1462244876218462 interval 54059 noise 45936 start_v 459806 end_v 505723 interval_v 22 noise_v 45917
+[pid = 23949] Create noise in us: start 1462244876172823 end 1462244876218760 interval 41039 noise 45937 start_v 459711 end_v 505630 interval_v 21 noise_v 45919
+[pid = 23950] Create noise in us: start 1462244876173388 end 1462244876232345 interval 54043 noise 58957 start_v 459745 end_v 505679 interval_v 22 noise_v 45934
+[pid = 23951] Create noise in us: start 1462244876173523 end 1462244876235015 interval 37578 noise 61492 start_v 494710 end_v 543169 interval_v 24 noise_v 48459
+
+#----------------------------------------------------------------
+# Benchmarking Allreduce 
+# #processes = 16 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+        65536          800      5712.46      5714.15      5713.23
+       131072          656      8962.04      8964.43      8962.85
+       262144          496     14683.34     14686.81     14684.61
+       524288          320     26519.92     26530.18     26525.10
+      1048576          192     47007.70     47052.22     47020.98
+      2097152           96     91354.45     91645.34     91502.93
+      4194304           48    191940.41    193713.95    192579.09
+[4]: Profile MPI_Finalize.
+[1]: Profile MPI_Finalize.
+[13]: Profile MPI_Finalize.
+[11]: Profile MPI_Finalize.
+[3]: Profile MPI_Finalize.
+[5]: Profile MPI_Finalize.
+[7]: Profile MPI_Finalize.
+[8]: Profile MPI_Finalize.
+[12]: Profile MPI_Finalize.
+[9]: Profile MPI_Finalize.
+[2]: Profile MPI_Finalize.
+
+
+# All processes entering MPI_Finalize
+
+[0]: Profile MPI_Finalize.
+[10]: Profile MPI_Finalize.
+[15]: Profile MPI_Finalize.
+[14]: Profile MPI_Finalize.
+[6]: Profile MPI_Finalize.

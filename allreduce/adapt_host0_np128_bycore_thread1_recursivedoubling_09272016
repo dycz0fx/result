@@ -1,0 +1,66 @@
+ benchmarks to run Allreduce 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Tue Sep 27 13:50:35 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.5.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Thu May 12 15:15:24 EDT 2016
+# MPI Version           : 3.1
+# MPI Thread Environment: MPI_THREAD_MULTIPLE
+
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-MPI1 Allreduce -npmin 128 -iter 1000 -time 100
+#                                       
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Allreduce
+
+#----------------------------------------------------------------
+# Benchmarking Allreduce 
+# #processes = 128 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+            0          896         0.06         0.10         0.06
+            4          896      2749.11      2764.42      2763.33
+            8          896      2862.43      2863.21      2862.71
+           16          896      2699.24      2700.34      2699.53
+           32          896      2667.55      2668.49      2667.82
+           64          896      2636.29      2637.08      2636.47
+          128          896      2785.34      2786.55      2785.75
+          256          896      2788.89      2790.21      2789.26
+          512          896      2855.67      2856.66      2855.93
+         1024          896      2888.30      2889.47      2888.62
+         2048          896      3489.20      3489.86      3489.51
+         4096          768      3346.04      3347.12      3346.47
+         8192          768      3373.61      3374.79      3374.21
+        16384          640      5511.97      5514.50      5513.27
+        32768          384     32252.20     32256.69     32254.31
+        65536          256     76159.76     76968.11     76207.03
+       131072          128    137436.99    139093.71    137739.17
+       262144          128    231559.69    233326.64    232033.69
+       524288          128    341886.60    343662.45    342782.13
+      1048576          128    528125.50    530044.06    529095.37

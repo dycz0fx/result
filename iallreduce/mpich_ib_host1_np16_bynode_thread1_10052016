@@ -1,0 +1,76 @@
+ benchmarks to run Iallreduce 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-NBC part  
+#------------------------------------------------------------
+# Date                  : Mon Oct 10 10:20:12 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.7.5-1.el6.elrepo.x86_64
+# Version               : #1 SMP Sat Sep 24 11:59:14 EDT 2016
+# MPI Version           : 3.0
+# MPI Thread Environment: MPI_THREAD_MULTIPLE
+
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# ./IMB-NBC Iallreduce -npmin 16 -iter 1000 -time 100
+#          
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Iallreduce
+
+#------------------------------------------------------------------------------------------
+# Benchmarking Iallreduce 
+# #processes = 16 
+#------------------------------------------------------------------------------------------
+       #bytes #repetitions t_ovrl[usec] t_pure[usec]  t_CPU[usec]   overlap[%]      defects
+            0          992        62.28        46.04        46.31        64.92         0.00
+            4          992        63.88        47.48        47.69        65.60         0.00
+            8          992        64.24        47.41        47.62        64.67         0.00
+           16          992        64.45        47.67        47.98        65.03         0.00
+           32          992        88.79        55.29        56.31        40.50         0.00
+           64          992        70.18        53.14        53.37        68.07         0.00
+          128          992        80.51        57.94        58.23        61.25         0.00
+          256          992        86.90        61.82        62.23        59.70         0.00
+          512          992        96.47        68.12        68.49        58.60         0.00
+         1024          992       115.16        79.20        79.71        54.88         0.00
+         2048          992       154.92       102.54       103.08        49.18         0.00
+         4096          976       249.33       163.35       163.79        47.51         0.00
+         8192          960       397.10       245.20       246.18        38.30         0.00
+        16384          928       671.69       392.90       394.30        29.30         0.00
+        32768          880      1224.75       684.95       687.09        21.44         0.00
+        65536          800      2303.21      1253.69      1259.50        16.67         0.00
+       131072          656      4436.13      2380.64      2385.45        13.83         0.00
+       262144          496      8752.25      4653.26      4669.52        12.22         0.00
+       524288          320     17411.34      9312.88      9341.52        13.31         0.00
+      1048576          192     34685.06     18446.74     18466.29        12.07         0.00
+      2097152           96     69467.13     36767.50     36787.42        11.11         0.00
+      4194304           48    143844.60     76677.94     76737.40        12.47         0.00
+
+
+!!!!  ALL BENCHMARKS SUCCESSFUL !!!! 
+
+
+
+# All processes entering MPI_Finalize
+

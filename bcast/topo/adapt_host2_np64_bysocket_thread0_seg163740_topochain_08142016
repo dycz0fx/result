@@ -1,0 +1,183 @@
+ benchmarks to run Bcast 
+[topo 52]: 7 48 52
+[topo 18]: 3 16 18
+[topo 7]: 1 1 7
+[topo 22]: 3 16 22
+[topo 3]: 1 1 3
+[topo 16]: 3 16 16
+[topo 5]: 1 1 5
+[topo 54]: 7 48 54
+[topo 56]: 8 56 56
+[topo 17]: 3 17 17
+[topo 1]: 1 1 1
+[topo 48]: 7 48 48
+[topo 60]: 8 56 60
+[topo 46]: 6 40 46
+[topo 20]: 3 16 20
+[topo 49]: 7 49 49
+[topo 57]: 8 57 57
+[topo 40]: 6 40 40
+[topo 36]: 5 32 36
+[topo 21]: 3 17 21
+[topo 50]: 7 48 50
+[topo 58]: 8 56 58
+[topo 41]: 6 41 41
+[topo 11]: 2 9 11
+[topo 23]: 3 17 23
+[topo 51]: 7 49 51
+[topo 61]: 8 57 61
+[topo 42]: 6 40 42
+[topo 37]: 5 33 37
+[topo 15]: 2 9 15
+[topo 19]: 3 17 19
+[topo 53]: 7 49 53
+[topo 62]: 8 56 62
+[topo 43]: 6 41 43
+[topo 39]: 5 33 39
+[topo 9]: 2 9 9
+[topo 55]: 7 49 55
+[topo 63]: 8 57 63
+[topo 44]: 6 40 44
+[topo 32]: 5 32 32
+[topo 13]: 2 9 13
+[topo 59]: 8 57 59
+[topo 45]: 6 41 45
+[topo 34]: 5 32 34
+[topo 47]: 6 41 47
+[topo 35]: 5 33 35
+[topo 38]: 5 32 38
+[topo 33]: 5 33 33
+[topo 6]: 1 0 6
+[topo 2]: 1 0 2
+[topo 4]: 1 0 4
+[topo 25]: 4 25 25
+[topo 30]: 4 24 30
+[topo 26]: 4 24 26
+[topo 27]: 4 25 27
+[topo 29]: 4 25 29
+[topo 31]: 4 25 31
+[topo 10]: 2 8 10
+[topo 24]: 4 24 24
+[topo 14]: 2 8 14
+[topo 0]: 1 0 0
+[topo 28]: 4 24 28
+[topo 12]: 2 8 12
+[topo 8]: 2 8 8
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Mon Aug 15 09:14:15 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.5.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Thu May 12 15:15:24 EDT 2016
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-MPI1 Bcast -npmin 64 -iter 1000 -msglen /home/dycz0fx/Lengths
+#                                       
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Bcast
+[topo 3]: 1 1 3
+[topo 20]: 3 16 20
+[topo 53]: 7 49 53
+[topo 30]: 4 24 30
+[topo 39]: 5 33 39
+[topo 14]: 2 8 14
+[topo 19]: 3 17 19
+[topo 4]: 1 0 4
+[topo 55]: 7 49 55
+[topo 24]: 4 24 24
+[topo 60]: 8 56 60
+[topo 41]: 6 41 41
+[topo 36]: 5 32 36
+[topo 11]: 2 9 11
+[topo 22]: 3 16 22
+[topo 5]: 1 1 5
+[topo 54]: 7 48 54
+[topo 27]: 4 25 27
+[topo 57]: 8 57 57
+[topo 43]: 6 41 43
+[topo 33]: 5 33 33
+[topo 8]: 2 8 8
+[topo 23]: 3 17 23
+[topo 6]: 1 0 6
+[topo 49]: 7 49 49
+[topo 31]: 4 25 31
+[topo 63]: 8 57 63
+[topo 44]: 6 40 44
+[topo 38]: 5 32 38
+[topo 12]: 2 8 12
+[topo 17]: 3 17 17
+[topo 7]: 1 1 7
+[topo 50]: 7 48 50
+[topo 28]: 4 24 28
+[topo 61]: 8 57 61
+[topo 47]: 6 41 47
+[topo 34]: 5 32 34
+[topo 15]: 2 9 15
+[topo 18]: 3 16 18
+[topo 2]: 1 0 2
+[topo 51]: 7 49 51
+[topo 26]: 4 24 26
+[topo 62]: 8 56 62
+[topo 46]: 6 40 46
+[topo 35]: 5 33 35
+[topo 13]: 2 9 13
+[topo 21]: 3 17 21
+[topo 1]: 1 1 1
+[topo 52]: 7 48 52
+[topo 25]: 4 25 25
+[topo 59]: 8 57 59
+[topo 40]: 6 40 40
+[topo 37]: 5 33 37
+[topo 9]: 2 9 9
+[topo 16]: 3 16 16
+[topo 0]: 1 0 0
+[topo 48]: 7 48 48
+[topo 29]: 4 25 29
+[topo 56]: 8 56 56
+[topo 42]: 6 40 42
+[topo 32]: 5 32 32
+[topo 10]: 2 8 10
+[topo 58]: 8 56 58
+[topo 45]: 6 41 45
+
+#----------------------------------------------------------------
+# Benchmarking Bcast 
+# #processes = 64 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+        65536          448       236.59       238.95       237.98
+       131072          320       416.34       421.83       419.50
+       262144          192       737.39       750.96       745.29
+       524288           64      1262.00      1314.91      1294.37
+      1048576           64      2212.05      2279.29      2256.51
+      2097152           64      4077.41      4168.54      4142.52
+      4194304           64      7808.62      7940.47      7907.78
+
+
+# All processes entering MPI_Finalize
+

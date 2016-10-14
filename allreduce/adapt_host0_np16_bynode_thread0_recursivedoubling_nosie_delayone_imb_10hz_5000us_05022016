@@ -1,0 +1,66 @@
+ benchmarks to run Allreduce 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Tue May  3 15:48:20 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.0.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Mon May 18 12:45:35 EDT 2015
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-MPI1 Allreduce -msglen /home/dycz0fx/Lengths -npmin 16 -iter 1000
+#                                        -time 100
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Allreduce
+[pid = 3806] Create noise in us: start 1462304900829408 end 1462304900835561 interval 1462304900829384 noise 6153 start_v 246889 end_v 253040 interval_v 246888 noise_v 6151
+[pid = 3806] Create noise in us: start 1462304900929374 end 1462304900935524 interval 93811 noise 6150 start_v 346802 end_v 352950 interval_v 93762 noise_v 6148
+[pid = 3806] Create noise in us: start 1462304901029374 end 1462304901035527 interval 93849 noise 6153 start_v 446750 end_v 452899 interval_v 93799 noise_v 6149
+[pid = 3806] Create noise in us: start 1462304901129393 end 1462304901135548 interval 93865 noise 6155 start_v 546715 end_v 552867 interval_v 93815 noise_v 6152
+[pid = 3806] Create noise in us: start 1462304901229374 end 1462304901235526 interval 93824 noise 6152 start_v 646642 end_v 652791 interval_v 93775 noise_v 6149
+[pid = 3806] Create noise in us: start 1462304901329373 end 1462304901335525 interval 93846 noise 6152 start_v 746582 end_v 752731 interval_v 93790 noise_v 6149
+[pid = 3806] Create noise in us: start 1462304901429374 end 1462304901435524 interval 93847 noise 6150 start_v 846523 end_v 852671 interval_v 93792 noise_v 6148
+[pid = 3806] Create noise in us: start 1462304901529375 end 1462304901535528 interval 93849 noise 6153 start_v 946474 end_v 952624 interval_v 93802 noise_v 6150
+[pid = 3806] Create noise in us: start 1462304901629382 end 1462304901635534 interval 93849 noise 6152 start_v 1046429 end_v 1052578 interval_v 93805 noise_v 6149
+[pid = 3806] Create noise in us: start 1462304901729375 end 1462304901735531 interval 93839 noise 6156 start_v 1146368 end_v 1152522 interval_v 93790 noise_v 6154
+[pid = 3806] Create noise in us: start 1462304901829375 end 1462304901835528 interval 93842 noise 6153 start_v 1246315 end_v 1252465 interval_v 93792 noise_v 6150
+
+#----------------------------------------------------------------
+# Benchmarking Allreduce 
+# #processes = 16 
+#----------------------------------------------------------------
+       #bytes #repetitions  t_min[usec]  t_max[usec]  t_avg[usec]
+        65536          800      3760.46      3762.59      3761.61
+       131072          656      6961.23      6964.88      6962.55
+       262144          496     11898.63     11906.41     11901.53
+       524288          320     24495.12     24534.78     24505.86
+      1048576          192     40366.56     40433.03     40387.02
+      2097152           96     81122.99     81296.15     81210.68
+      4194304           48    164717.10    164965.98    164848.96
+
+
+# All processes entering MPI_Finalize
+

@@ -1,0 +1,214 @@
+ benchmarks to run Allreduce 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-1 part    
+#------------------------------------------------------------
+# Date                  : Tue May  3 01:30:48 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.0.4-1.el6.elrepo.x86_64
+# Version               : #1 SMP Mon May 18 12:45:35 EDT 2015
+# MPI Version           : 3.1
+# MPI Thread Environment: 
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-MPI1 Allreduce -msglen /home/dycz0fx/Lengths -npmin 16 -iter 1000
+#                                       
+
+# Message lengths were user defined
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Allreduce
+[pid = 19667] Create noise in us: start 1462253448690586 end 1462253448710559 interval 1462253448690562 noise 19973 start_v 249106 end_v 269070 interval_v 249105 noise_v 19964 extra_time -156
+[pid = 17267] Create noise in us: start 1462253448689674 end 1462253448709652 interval 1462253448689649 noise 19978 start_v 248718 end_v 268687 interval_v 248717 noise_v 19969 extra_time -452
+[pid = 17256] Create noise in us: start 1462253448690309 end 1462253448710287 interval 1462253448690281 noise 19978 start_v 246947 end_v 266917 interval_v 246946 noise_v 19970 extra_time -522
+[pid = 19709] Create noise in us: start 1462253448689625 end 1462253448709606 interval 1462253448689602 noise 19981 start_v 247778 end_v 267751 interval_v 247778 noise_v 19973 extra_time -98
+[pid = 17242] Create noise in us: start 1462253448690875 end 1462253448712389 interval 1462253448690853 noise 21514 start_v 251078 end_v 272582 interval_v 251077 noise_v 21504 extra_time 298
+[pid = 17286] Create noise in us: start 1462253448689785 end 1462253448711299 interval 1462253448689756 noise 21514 start_v 247680 end_v 269185 interval_v 247679 noise_v 21505 extra_time 939
+[pid = 21708] Create noise in us: start 1462253448689942 end 1462253448711466 interval 1462253448689918 noise 21524 start_v 250020 end_v 271536 interval_v 250019 noise_v 21516 extra_time -4
+[pid = 17427] Create noise in us: start 1462253448689077 end 1462253448710592 interval 1462253448689051 noise 21515 start_v 249013 end_v 270519 interval_v 249012 noise_v 21506 extra_time 501
+[pid = 17665] Create noise in us: start 1462253448689587 end 1462253448711101 interval 1462253448689565 noise 21514 start_v 248986 end_v 270491 interval_v 248985 noise_v 21505 extra_time 759
+[pid = 17221] Create noise in us: start 1462253448689735 end 1462253448711253 interval 1462253448689715 noise 21518 start_v 248407 end_v 269916 interval_v 248406 noise_v 21509 extra_time 537
+[pid = 26138] Create noise in us: start 1462253448689119 end 1462253448710648 interval 1462253448689097 noise 21529 start_v 246490 end_v 268010 interval_v 246489 noise_v 21520 extra_time 935
+[pid = 20737] Create noise in us: start 1462253448690027 end 1462253448711553 interval 1462253448690002 noise 21526 start_v 250714 end_v 272231 interval_v 250713 noise_v 21517 extra_time 407
+[pid = 20859] Create noise in us: start 1462253448690315 end 1462253448711836 interval 1462253448690292 noise 21521 start_v 249340 end_v 270852 interval_v 249339 noise_v 21512 extra_time 292
+[pid = 19617] Create noise in us: start 1462253448690397 end 1462253448711911 interval 1462253448690377 noise 21514 start_v 249270 end_v 270775 interval_v 249269 noise_v 21505 extra_time 218
+[pid = 19623] Create noise in us: start 1462253448689759 end 1462253448711277 interval 1462253448689735 noise 21518 start_v 248097 end_v 269606 interval_v 248096 noise_v 21509 extra_time 158
+[pid = 17288] Create noise in us: start 1462253448690363 end 1462253448711879 interval 1462253448690341 noise 21516 start_v 247151 end_v 268658 interval_v 247150 noise_v 21507 extra_time 299
+[pid = 19667] Create noise in us: start 1462253448790549 end 1462253448810523 interval 79989 noise 19974 start_v 349016 end_v 368982 interval_v 79946 noise_v 19966 extra_time -233
+[pid = 17427] Create noise in us: start 1462253448789038 end 1462253448809029 interval 78445 noise 19991 start_v 348923 end_v 368905 interval_v 78403 noise_v 19982 extra_time -780
+[pid = 17267] Create noise in us: start 1462253448789638 end 1462253448809616 interval 79984 noise 19978 start_v 348628 end_v 368598 interval_v 79940 noise_v 19970 extra_time -405
+[pid = 17286] Create noise in us: start 1462253448789741 end 1462253448809714 interval 78440 noise 19973 start_v 347575 end_v 367539 interval_v 78389 noise_v 19964 extra_time -297
+[pid = 17665] Create noise in us: start 1462253448789546 end 1462253448809526 interval 78443 noise 19980 start_v 348892 end_v 368864 interval_v 78401 noise_v 19972 extra_time -466
+[pid = 20737] Create noise in us: start 1462253448789989 end 1462253448809972 interval 78434 noise 19983 start_v 350626 end_v 370600 interval_v 78394 noise_v 19974 extra_time -595
+[pid = 17256] Create noise in us: start 1462253448790271 end 1462253448810260 interval 79982 noise 19989 start_v 346857 end_v 366833 interval_v 79940 noise_v 19976 extra_time -611
+[pid = 20859] Create noise in us: start 1462253448790277 end 1462253448810254 interval 78439 noise 19977 start_v 349248 end_v 369217 interval_v 78396 noise_v 19969 extra_time -208
+[pid = 21708] Create noise in us: start 1462253448789908 end 1462253448811422 interval 78440 noise 21514 start_v 349934 end_v 371439 interval_v 78397 noise_v 21505 extra_time 352
+[pid = 26138] Create noise in us: start 1462253448789086 end 1462253448810600 interval 78436 noise 21514 start_v 346404 end_v 367909 interval_v 78393 noise_v 21505 extra_time 822
+[pid = 19617] Create noise in us: start 1462253448790365 end 1462253448811879 interval 78452 noise 21514 start_v 349186 end_v 370692 interval_v 78411 noise_v 21506 extra_time 963
+[pid = 19709] Create noise in us: start 1462253448789592 end 1462253448811109 interval 79984 noise 21517 start_v 347692 end_v 369200 interval_v 79940 noise_v 21508 extra_time 702
+[pid = 19623] Create noise in us: start 1462253448789720 end 1462253448811236 interval 78441 noise 21516 start_v 348006 end_v 369512 interval_v 78399 noise_v 21506 extra_time 47
+[pid = 17288] Create noise in us: start 1462253448790336 end 1462253448811862 interval 78456 noise 21526 start_v 347073 end_v 368590 interval_v 78414 noise_v 21517 extra_time 779
+[pid = 17242] Create noise in us: start 1462253448790834 end 1462253448812346 interval 78443 noise 21512 start_v 350985 end_v 372488 interval_v 78402 noise_v 21503 extra_time 452
+[pid = 17221] Create noise in us: start 1462253448789703 end 1462253448811212 interval 78448 noise 21509 start_v 348324 end_v 369825 interval_v 78407 noise_v 21501 extra_time 588
+[pid = 17267] Create noise in us: start 1462253448889639 end 1462253448909617 interval 80021 noise 19978 start_v 448579 end_v 468549 interval_v 79980 noise_v 19970 extra_time -274
+[pid = 17665] Create noise in us: start 1462253448889546 end 1462253448909525 interval 80018 noise 19979 start_v 448843 end_v 468814 interval_v 79978 noise_v 19971 extra_time -406
+[pid = 19623] Create noise in us: start 1462253448889722 end 1462253448909701 interval 78483 noise 19979 start_v 447957 end_v 467928 interval_v 78444 noise_v 19971 extra_time -580
+[pid = 20737] Create noise in us: start 1462253448889989 end 1462253448909968 interval 80015 noise 19979 start_v 450575 end_v 470546 interval_v 79974 noise_v 19971 extra_time -111
+[pid = 17256] Create noise in us: start 1462253448890269 end 1462253448910247 interval 80007 noise 19978 start_v 446801 end_v 466771 interval_v 79968 noise_v 19970 extra_time -200
+[pid = 17242] Create noise in us: start 1462253448890834 end 1462253448912352 interval 78486 noise 21518 start_v 450935 end_v 472443 interval_v 78446 noise_v 21508 extra_time 844
+[pid = 19667] Create noise in us: start 1462253448890551 end 1462253448912064 interval 80027 noise 21513 start_v 448969 end_v 470473 interval_v 79986 noise_v 21504 extra_time 204
+[pid = 17286] Create noise in us: start 1462253448889740 end 1462253448911276 interval 80024 noise 21536 start_v 447524 end_v 469052 interval_v 79984 noise_v 21528 extra_time 234
+[pid = 21708] Create noise in us: start 1462253448889908 end 1462253448911428 interval 78485 noise 21520 start_v 449884 end_v 471395 interval_v 78444 noise_v 21511 extra_time 196
+[pid = 17427] Create noise in us: start 1462253448889038 end 1462253448910558 interval 80007 noise 21520 start_v 448873 end_v 470385 interval_v 79967 noise_v 21512 extra_time 577
+[pid = 17221] Create noise in us: start 1462253448889702 end 1462253448911225 interval 78489 noise 21523 start_v 448274 end_v 469787 interval_v 78448 noise_v 21513 extra_time 122
+[pid = 26138] Create noise in us: start 1462253448889085 end 1462253448910608 interval 78483 noise 21523 start_v 446351 end_v 467866 interval_v 78442 noise_v 21515 extra_time 734
+[pid = 19709] Create noise in us: start 1462253448889591 end 1462253448911106 interval 78480 noise 21515 start_v 447640 end_v 469146 interval_v 78440 noise_v 21506 extra_time 517
+[pid = 20859] Create noise in us: start 1462253448890277 end 1462253448911795 interval 80022 noise 21518 start_v 449199 end_v 470708 interval_v 79981 noise_v 21509 extra_time 845
+[pid = 17288] Create noise in us: start 1462253448890338 end 1462253448911868 interval 78474 noise 21530 start_v 447026 end_v 468547 interval_v 78435 noise_v 21521 extra_time 336
+[pid = 19617] Create noise in us: start 1462253448890364 end 1462253448911883 interval 78484 noise 21519 start_v 449137 end_v 470647 interval_v 78444 noise_v 21510 extra_time 547
+[pid = 17242] Create noise in us: start 1462253448990834 end 1462253449010808 interval 78480 noise 19974 start_v 550884 end_v 570850 interval_v 78440 noise_v 19966 extra_time -995
+[pid = 20859] Create noise in us: start 1462253448990278 end 1462253449010252 interval 78481 noise 19974 start_v 549149 end_v 569114 interval_v 78440 noise_v 19965 extra_time -861
+[pid = 17665] Create noise in us: start 1462253448989545 end 1462253449009522 interval 80019 noise 19977 start_v 548792 end_v 568761 interval_v 79978 noise_v 19969 extra_time -662
+[pid = 26138] Create noise in us: start 1462253448989087 end 1462253449009073 interval 78477 noise 19986 start_v 546301 end_v 566279 interval_v 78434 noise_v 19978 extra_time -56
+[pid = 20737] Create noise in us: start 1462253448989989 end 1462253449009970 interval 80019 noise 19981 start_v 550526 end_v 570499 interval_v 79979 noise_v 19973 extra_time -358
+[pid = 17256] Create noise in us: start 1462253448990270 end 1462253449010248 interval 80021 noise 19978 start_v 546752 end_v 566722 interval_v 79981 noise_v 19970 extra_time -38
+[pid = 17286] Create noise in us: start 1462253448989744 end 1462253449009716 interval 78466 noise 19972 start_v 547480 end_v 567444 interval_v 78427 noise_v 19964 extra_time -56
+[pid = 19623] Create noise in us: start 1462253448989721 end 1462253449009700 interval 80018 noise 19979 start_v 547906 end_v 567877 interval_v 79977 noise_v 19971 extra_time -862
+[pid = 17221] Create noise in us: start 1462253448989702 end 1462253449011226 interval 78476 noise 21524 start_v 548215 end_v 569730 interval_v 78427 noise_v 21515 extra_time 298
+[pid = 19617] Create noise in us: start 1462253448990365 end 1462253449011888 interval 78480 noise 21523 start_v 549088 end_v 570602 interval_v 78441 noise_v 21514 extra_time 773
+[pid = 19709] Create noise in us: start 1462253448989592 end 1462253449011102 interval 78484 noise 21510 start_v 547555 end_v 569056 interval_v 78408 noise_v 21501 extra_time 855
+[pid = 17267] Create noise in us: start 1462253448989637 end 1462253449011150 interval 80018 noise 21513 start_v 548526 end_v 570030 interval_v 79976 noise_v 21504 extra_time 264
+[pid = 21708] Create noise in us: start 1462253448989903 end 1462253449011434 interval 78474 noise 21531 start_v 549829 end_v 571350 interval_v 78433 noise_v 21521 extra_time 298
+[pid = 17427] Create noise in us: start 1462253448989043 end 1462253449010560 interval 78483 noise 21517 start_v 548830 end_v 570338 interval_v 78444 noise_v 21508 extra_time 420
+[pid = 17288] Create noise in us: start 1462253448990329 end 1462253449011859 interval 78459 noise 21530 start_v 546967 end_v 568488 interval_v 78419 noise_v 21521 extra_time 910
+[pid = 19667] Create noise in us: start 1462253448990550 end 1462253449012067 interval 78485 noise 21517 start_v 548918 end_v 570426 interval_v 78444 noise_v 21508 extra_time 600
+[pid = 17242] Create noise in us: start 1462253449090834 end 1462253449110817 interval 80024 noise 19983 start_v 650828 end_v 670803 interval_v 79978 noise_v 19975 extra_time -164
+[pid = 17286] Create noise in us: start 1462253449089740 end 1462253449109723 interval 80022 noise 19983 start_v 647427 end_v 667402 interval_v 79982 noise_v 19975 extra_time -216
+[pid = 21708] Create noise in us: start 1462253449089904 end 1462253449109885 interval 78469 noise 19981 start_v 649772 end_v 669744 interval_v 78421 noise_v 19972 extra_time -736
+[pid = 17665] Create noise in us: start 1462253449089546 end 1462253449109527 interval 80022 noise 19981 start_v 648744 end_v 668717 interval_v 79982 noise_v 19973 extra_time -81
+[pid = 26138] Create noise in us: start 1462253449089083 end 1462253449109061 interval 80009 noise 19978 start_v 646247 end_v 666216 interval_v 79967 noise_v 19969 extra_time -289
+[pid = 20737] Create noise in us: start 1462253449089989 end 1462253449109981 interval 80017 noise 19992 start_v 650476 end_v 670452 interval_v 79976 noise_v 19976 extra_time -201
+[pid = 19617] Create noise in us: start 1462253449090365 end 1462253449110381 interval 78476 noise 20016 start_v 649039 end_v 669015 interval_v 78437 noise_v 19976 extra_time -400
+[pid = 19709] Create noise in us: start 1462253449089590 end 1462253449109570 interval 78487 noise 19980 start_v 647504 end_v 667476 interval_v 78447 noise_v 19972 extra_time -139
+[pid = 20859] Create noise in us: start 1462253449090277 end 1462253449110256 interval 80024 noise 19979 start_v 649098 end_v 669068 interval_v 79983 noise_v 19970 extra_time -228
+[pid = 17288] Create noise in us: start 1462253449090328 end 1462253449110299 interval 78467 noise 19971 start_v 646916 end_v 666880 interval_v 78428 noise_v 19964 extra_time -688
+[pid = 17267] Create noise in us: start 1462253449089636 end 1462253449111152 interval 78484 noise 21516 start_v 648473 end_v 669981 interval_v 78443 noise_v 21508 extra_time 762
+[pid = 19667] Create noise in us: start 1462253449090550 end 1462253449112059 interval 78481 noise 21509 start_v 648868 end_v 670368 interval_v 78441 noise_v 21500 extra_time 929
+[pid = 17221] Create noise in us: start 1462253449089766 end 1462253449111299 interval 78539 noise 21533 start_v 648231 end_v 669755 interval_v 78500 noise_v 21524 extra_time 304
+[pid = 17256] Create noise in us: start 1462253449090269 end 1462253449111791 interval 80020 noise 21522 start_v 646702 end_v 668215 interval_v 79979 noise_v 21513 extra_time 477
+[pid = 17427] Create noise in us: start 1462253449089035 end 1462253449110548 interval 78473 noise 21513 start_v 648773 end_v 670277 interval_v 78434 noise_v 21504 extra_time 476
+[pid = 19623] Create noise in us: start 1462253449089721 end 1462253449111251 interval 80019 noise 21530 start_v 647857 end_v 669378 interval_v 79979 noise_v 21521 extra_time 173
+[pid = 20737] Create noise in us: start 1462253449189990 end 1462253449209969 interval 80007 noise 19979 start_v 750423 end_v 770395 interval_v 79971 noise_v 19972 extra_time -814
+[pid = 19617] Create noise in us: start 1462253449190364 end 1462253449210342 interval 79982 noise 19978 start_v 748960 end_v 768930 interval_v 79945 noise_v 19970 extra_time -330
+[pid = 20859] Create noise in us: start 1462253449190278 end 1462253449210263 interval 80020 noise 19985 start_v 749049 end_v 769026 interval_v 79980 noise_v 19977 extra_time -325
+[pid = 17288] Create noise in us: start 1462253449190328 end 1462253449210312 interval 80027 noise 19984 start_v 746867 end_v 766843 interval_v 79986 noise_v 19976 extra_time -681
+[pid = 17242] Create noise in us: start 1462253449190834 end 1462253449212350 interval 80015 noise 21516 start_v 750777 end_v 772285 interval_v 79974 noise_v 21508 extra_time 956
+[pid = 19667] Create noise in us: start 1462253449190550 end 1462253449212065 interval 78488 noise 21515 start_v 748818 end_v 770325 interval_v 78449 noise_v 21507 extra_time 772
+[pid = 17267] Create noise in us: start 1462253449189636 end 1462253449211156 interval 78483 noise 21520 start_v 748423 end_v 769934 interval_v 78442 noise_v 21511 extra_time 725
+[pid = 17286] Create noise in us: start 1462253449189741 end 1462253449211250 interval 80017 noise 21509 start_v 747379 end_v 768879 interval_v 79976 noise_v 21500 extra_time 805
+[pid = 21708] Create noise in us: start 1462253449189903 end 1462253449211412 interval 80017 noise 21509 start_v 749721 end_v 771221 interval_v 79976 noise_v 21500 extra_time 2
+[pid = 17427] Create noise in us: start 1462253449189037 end 1462253449210559 interval 78488 noise 21522 start_v 748728 end_v 770240 interval_v 78450 noise_v 21512 extra_time 770
+[pid = 17665] Create noise in us: start 1462253449189545 end 1462253449211060 interval 80016 noise 21515 start_v 748693 end_v 770200 interval_v 79975 noise_v 21507 extra_time 584
+[pid = 17221] Create noise in us: start 1462253449189702 end 1462253449211218 interval 78402 noise 21516 start_v 748118 end_v 769624 interval_v 78362 noise_v 21506 extra_time 249
+[pid = 26138] Create noise in us: start 1462253449189086 end 1462253449210602 interval 80023 noise 21516 start_v 746198 end_v 767705 interval_v 79981 noise_v 21507 extra_time 241
+[pid = 19623] Create noise in us: start 1462253449189720 end 1462253449211241 interval 78467 noise 21521 start_v 747806 end_v 769318 interval_v 78427 noise_v 21512 extra_time 185
+[pid = 17256] Create noise in us: start 1462253449190268 end 1462253449211786 interval 78476 noise 21518 start_v 746651 end_v 768159 interval_v 78435 noise_v 21508 extra_time 648
+[pid = 19709] Create noise in us: start 1462253449189591 end 1462253449211114 interval 80019 noise 21523 start_v 747453 end_v 768968 interval_v 79977 noise_v 21515 extra_time 179
+[pid = 17242] Create noise in us: start 1462253449290833 end 1462253449310821 interval 78481 noise 19988 start_v 850726 end_v 870706 interval_v 78440 noise_v 19980 extra_time -894
+[pid = 19667] Create noise in us: start 1462253449290551 end 1462253449310529 interval 78484 noise 19978 start_v 848738 end_v 868709 interval_v 78413 noise_v 19971 extra_time -416
+[pid = 17427] Create noise in us: start 1462253449289035 end 1462253449309030 interval 78474 noise 19995 start_v 848677 end_v 868664 interval_v 78436 noise_v 19987 extra_time -697
+[pid = 26138] Create noise in us: start 1462253449289086 end 1462253449309073 interval 78482 noise 19987 start_v 846138 end_v 866117 interval_v 78432 noise_v 19979 extra_time -237
+[pid = 19617] Create noise in us: start 1462253449290450 end 1462253449310437 interval 80107 noise 19987 start_v 848997 end_v 868976 interval_v 80066 noise_v 19979 extra_time -115
+[pid = 19623] Create noise in us: start 1462253449289720 end 1462253449309700 interval 78478 noise 19980 start_v 847757 end_v 867728 interval_v 78438 noise_v 19971 extra_time -393
+[pid = 17256] Create noise in us: start 1462253449290269 end 1462253449310246 interval 78481 noise 19977 start_v 846601 end_v 866570 interval_v 78442 noise_v 19969 extra_time -56
+[pid = 20859] Create noise in us: start 1462253449290277 end 1462253449310247 interval 80013 noise 19970 start_v 848990 end_v 868952 interval_v 79963 noise_v 19962 extra_time -216
+[pid = 17267] Create noise in us: start 1462253449289639 end 1462253449309630 interval 78481 noise 19991 start_v 848375 end_v 868351 interval_v 78441 noise_v 19976 extra_time -462
+[pid = 17221] Create noise in us: start 1462253449289702 end 1462253449309674 interval 78482 noise 19972 start_v 848068 end_v 868032 interval_v 78443 noise_v 19964 extra_time -91
+[pid = 21708] Create noise in us: start 1462253449289902 end 1462253449311417 interval 78489 noise 21515 start_v 849671 end_v 871176 interval_v 78449 noise_v 21505 extra_time 952
+[pid = 17665] Create noise in us: start 1462253449289546 end 1462253449311070 interval 78484 noise 21524 start_v 848645 end_v 870152 interval_v 78444 noise_v 21507 extra_time 398
+[pid = 20737] Create noise in us: start 1462253449289990 end 1462253449311503 interval 80019 noise 21513 start_v 850375 end_v 871879 interval_v 79979 noise_v 21504 extra_time 620
+[pid = 17288] Create noise in us: start 1462253449290329 end 1462253449311846 interval 80015 noise 21517 start_v 846819 end_v 868328 interval_v 79975 noise_v 21509 extra_time 371
+[pid = 17286] Create noise in us: start 1462253449289740 end 1462253449311256 interval 78488 noise 21516 start_v 847329 end_v 868837 interval_v 78449 noise_v 21508 extra_time 876
+[pid = 19709] Create noise in us: start 1462253449289590 end 1462253449311112 interval 78475 noise 21522 start_v 847403 end_v 868916 interval_v 78434 noise_v 21513 extra_time 898
+[pid = 17242] Create noise in us: start 1462253449390835 end 1462253449410808 interval 80012 noise 19973 start_v 950674 end_v 970639 interval_v 79967 noise_v 19965 extra_time -983
+[pid = 19667] Create noise in us: start 1462253449390551 end 1462253449410532 interval 80020 noise 19981 start_v 948690 end_v 968662 interval_v 79980 noise_v 19972 extra_time -361
+[pid = 21708] Create noise in us: start 1462253449389911 end 1462253449409908 interval 78492 noise 19997 start_v 949621 end_v 969610 interval_v 78444 noise_v 19989 extra_time -175
+[pid = 17427] Create noise in us: start 1462253449389037 end 1462253449409017 interval 80005 noise 19980 start_v 948624 end_v 968596 interval_v 79959 noise_v 19972 extra_time -107
+[pid = 19617] Create noise in us: start 1462253449390365 end 1462253449410352 interval 79927 noise 19987 start_v 948863 end_v 968842 interval_v 79886 noise_v 19979 extra_time -304
+[pid = 20859] Create noise in us: start 1462253449390278 end 1462253449410265 interval 80029 noise 19987 start_v 948941 end_v 968920 interval_v 79988 noise_v 19979 extra_time -401
+[pid = 17288] Create noise in us: start 1462253449390328 end 1462253449410305 interval 78480 noise 19977 start_v 946740 end_v 966709 interval_v 78411 noise_v 19969 extra_time -379
+[pid = 17286] Create noise in us: start 1462253449389741 end 1462253449411257 interval 78483 noise 21516 start_v 947281 end_v 968789 interval_v 78444 noise_v 21508 extra_time 647
+[pid = 17221] Create noise in us: start 1462253449389702 end 1462253449411220 interval 80026 noise 21518 start_v 948018 end_v 969527 interval_v 79985 noise_v 21509 extra_time 472
+[pid = 26138] Create noise in us: start 1462253449389090 end 1462253449410608 interval 80014 noise 21518 start_v 946093 end_v 967602 interval_v 79975 noise_v 21509 extra_time 646
+[pid = 20737] Create noise in us: start 1462253449389990 end 1462253449411529 interval 78485 noise 21539 start_v 950326 end_v 971856 interval_v 78446 noise_v 21530 extra_time 646
+[pid = 19623] Create noise in us: start 1462253449389721 end 1462253449411237 interval 80019 noise 21516 start_v 947708 end_v 969215 interval_v 79979 noise_v 21507 extra_time 69
+[pid = 17256] Create noise in us: start 1462253449390268 end 1462253449411788 interval 80020 noise 21520 start_v 946550 end_v 968062 interval_v 79980 noise_v 21512 extra_time 283
+[pid = 17267] Create noise in us: start 1462253449389637 end 1462253449411157 interval 80005 noise 21520 start_v 948319 end_v 969830 interval_v 79967 noise_v 21511 extra_time 804
+[pid = 19709] Create noise in us: start 1462253449389596 end 1462253449411114 interval 78482 noise 21518 start_v 947359 end_v 968869 interval_v 78442 noise_v 21510 extra_time 937
+[pid = 17665] Create noise in us: start 1462253449389547 end 1462253449411064 interval 78475 noise 21517 start_v 948591 end_v 970099 interval_v 78438 noise_v 21508 extra_time 807
+[pid = 17665] Create noise in us: start 1462253449489556 end 1462253449509530 interval 78483 noise 19974 start_v 1048551 end_v 1068517 interval_v 78452 noise_v 19966 extra_time -291
+[pid = 17221] Create noise in us: start 1462253449489708 end 1462253449509695 interval 78484 noise 19987 start_v 1047975 end_v 1067954 interval_v 78447 noise_v 19979 extra_time -270
+[pid = 26138] Create noise in us: start 1462253449489091 end 1462253449509066 interval 78479 noise 19975 start_v 1046041 end_v 1066008 interval_v 78438 noise_v 19967 extra_time -808
+[pid = 17242] Create noise in us: start 1462253449490844 end 1462253449510818 interval 80026 noise 19974 start_v 1050632 end_v 1070598 interval_v 79992 noise_v 19966 extra_time -326
+[pid = 17267] Create noise in us: start 1462253449489643 end 1462253449509620 interval 78482 noise 19977 start_v 1048274 end_v 1068244 interval_v 78444 noise_v 19970 extra_time -966
+[pid = 17427] Create noise in us: start 1462253449489041 end 1462253449509018 interval 80020 noise 19977 start_v 1048575 end_v 1068544 interval_v 79978 noise_v 19969 extra_time -863
+[pid = 19617] Create noise in us: start 1462253449490372 end 1462253449510357 interval 80016 noise 19985 start_v 1048821 end_v 1068798 interval_v 79978 noise_v 19977 extra_time -289
+[pid = 19709] Create noise in us: start 1462253449489595 end 1462253449509573 interval 78477 noise 19978 start_v 1047309 end_v 1067279 interval_v 78440 noise_v 19970 extra_time -44
+[pid = 17256] Create noise in us: start 1462253449490275 end 1462253449510252 interval 78483 noise 19977 start_v 1046508 end_v 1066477 interval_v 78445 noise_v 19969 extra_time -737
+[pid = 17288] Create noise in us: start 1462253449490335 end 1462253449510322 interval 80025 noise 19987 start_v 1046698 end_v 1066677 interval_v 79988 noise_v 19979 extra_time -884
+[pid = 20737] Create noise in us: start 1462253449489996 end 1462253449511513 interval 78463 noise 21517 start_v 1050282 end_v 1071791 interval_v 78425 noise_v 21509 extra_time 665
+[pid = 19623] Create noise in us: start 1462253449489728 end 1462253449511239 interval 78487 noise 21511 start_v 1047658 end_v 1069160 interval_v 78442 noise_v 21502 extra_time 591
+[pid = 20859] Create noise in us: start 1462253449490285 end 1462253449511801 interval 80015 noise 21516 start_v 1048898 end_v 1070405 interval_v 79977 noise_v 21507 extra_time 452
+[pid = 21708] Create noise in us: start 1462253449489910 end 1462253449511432 interval 79998 noise 21522 start_v 1049570 end_v 1071083 interval_v 79959 noise_v 21513 extra_time 21
+[pid = 19667] Create noise in us: start 1462253449490557 end 1462253449512080 interval 80021 noise 21523 start_v 1048646 end_v 1070161 interval_v 79983 noise_v 21515 extra_time 519
+[pid = 17286] Create noise in us: start 1462253449489746 end 1462253449511270 interval 78485 noise 21524 start_v 1047238 end_v 1068753 interval_v 78448 noise_v 21515 extra_time 786
+[pid = 17427] Create noise in us: start 1462253449589035 end 1462253449609012 interval 80015 noise 19977 start_v 1148520 end_v 1168489 interval_v 79976 noise_v 19969 extra_time -313
+[pid = 26138] Create noise in us: start 1462253449589087 end 1462253449609059 interval 80019 noise 19972 start_v 1145986 end_v 1165950 interval_v 79977 noise_v 19964 extra_time -526
+[pid = 20737] Create noise in us: start 1462253449589988 end 1462253449609966 interval 78474 noise 19978 start_v 1150225 end_v 1170195 interval_v 78434 noise_v 19970 extra_time -756
+[pid = 19617] Create noise in us: start 1462253449590363 end 1462253449610351 interval 80005 noise 19988 start_v 1148763 end_v 1168743 interval_v 79965 noise_v 19980 extra_time -829
+[pid = 19623] Create noise in us: start 1462253449589721 end 1462253449609705 interval 78480 noise 19984 start_v 1147601 end_v 1167577 interval_v 78441 noise_v 19976 extra_time -438
+[pid = 17288] Create noise in us: start 1462253449590327 end 1462253449610312 interval 80004 noise 19985 start_v 1146641 end_v 1166617 interval_v 79963 noise_v 19976 extra_time -363
+[pid = 17665] Create noise in us: start 1462253449589545 end 1462253449609525 interval 80013 noise 19980 start_v 1148490 end_v 1168462 interval_v 79972 noise_v 19972 extra_time -991
+[pid = 17221] Create noise in us: start 1462253449589701 end 1462253449609680 interval 80005 noise 19979 start_v 1147918 end_v 1167889 interval_v 79963 noise_v 19971 extra_time -204
+[pid = 21708] Create noise in us: start 1462253449589903 end 1462253449611417 interval 78469 noise 21514 start_v 1149512 end_v 1171018 interval_v 78429 noise_v 21506 extra_time 264
+[pid = 19667] Create noise in us: start 1462253449590550 end 1462253449612067 interval 78468 noise 21517 start_v 1148589 end_v 1170098 interval_v 78427 noise_v 21509 extra_time 725
+[pid = 19709] Create noise in us: start 1462253449589591 end 1462253449611120 interval 80016 noise 21529 start_v 1147255 end_v 1168774 interval_v 79975 noise_v 21519 extra_time 896
+[pid = 17256] Create noise in us: start 1462253449590271 end 1462253449611785 interval 80017 noise 21514 start_v 1146453 end_v 1167958 interval_v 79975 noise_v 21505 extra_time 634
+[pid = 20859] Create noise in us: start 1462253449590305 end 1462253449611820 interval 78502 noise 21515 start_v 1148867 end_v 1170373 interval_v 78461 noise_v 21506 extra_time 615
+[pid = 17242] Create noise in us: start 1462253449590834 end 1462253449612347 interval 80014 noise 21513 start_v 1150567 end_v 1172071 interval_v 79968 noise_v 21504 extra_time 64
+[pid = 17286] Create noise in us: start 1462253449589740 end 1462253449611265 interval 78469 noise 21525 start_v 1147183 end_v 1168699 interval_v 78429 noise_v 21516 extra_time 880
+[pid = 17267] Create noise in us: start 1462253449589637 end 1462253449611153 interval 80015 noise 21516 start_v 1148218 end_v 1169725 interval_v 79973 noise_v 21507 extra_time 763
+[pid = 21708] Create noise in us: start 1462253449689902 end 1462253449709879 interval 78483 noise 19977 start_v 1249461 end_v 1269431 interval_v 78443 noise_v 19970 extra_time -529
+[pid = 17665] Create noise in us: start 1462253449689545 end 1462253449709519 interval 80018 noise 19974 start_v 1248441 end_v 1268406 interval_v 79978 noise_v 19965 extra_time -784
+[pid = 26138] Create noise in us: start 1462253449689085 end 1462253449709061 interval 80025 noise 19976 start_v 1245933 end_v 1265901 interval_v 79982 noise_v 19968 extra_time -277
+[pid = 17242] Create noise in us: start 1462253449690834 end 1462253449710807 interval 78485 noise 19973 start_v 1250491 end_v 1270456 interval_v 78419 noise_v 19965 extra_time -279
+[pid = 17267] Create noise in us: start 1462253449689638 end 1462253449709622 interval 78483 noise 19984 start_v 1248167 end_v 1268144 interval_v 78442 noise_v 19977 extra_time -632
+[pid = 17256] Create noise in us: start 1462253449690270 end 1462253449710246 interval 78483 noise 19976 start_v 1246384 end_v 1266353 interval_v 78425 noise_v 19969 extra_time -297
+[pid = 20859] Create noise in us: start 1462253449690277 end 1462253449710249 interval 78455 noise 19972 start_v 1248788 end_v 1268752 interval_v 78414 noise_v 19964 extra_time -251
+[pid = 17221] Create noise in us: start 1462253449689702 end 1462253449709680 interval 80021 noise 19978 start_v 1247870 end_v 1267840 interval_v 79980 noise_v 19970 extra_time -939
+[pid = 20737] Create noise in us: start 1462253449690060 end 1462253449710045 interval 80092 noise 19985 start_v 1250248 end_v 1270225 interval_v 80052 noise_v 19977 extra_time -657
+[pid = 19617] Create noise in us: start 1462253449690365 end 1462253449710343 interval 80012 noise 19978 start_v 1248716 end_v 1268685 interval_v 79972 noise_v 19969 extra_time -423
+[pid = 17427] Create noise in us: start 1462253449689036 end 1462253449710560 interval 80022 noise 21524 start_v 1248474 end_v 1269988 interval_v 79984 noise_v 21514 extra_time 974
+[pid = 19667] Create noise in us: start 1462253449690550 end 1462253449712067 interval 78482 noise 21517 start_v 1248540 end_v 1270047 interval_v 78441 noise_v 21507 extra_time -22
+[pid = 17286] Create noise in us: start 1462253449689744 end 1462253449711260 interval 78477 noise 21516 start_v 1247138 end_v 1268646 interval_v 78438 noise_v 21508 extra_time 599
+[pid = 19623] Create noise in us: start 1462253449689720 end 1462253449711237 interval 80014 noise 21517 start_v 1247551 end_v 1269059 interval_v 79973 noise_v 21508 extra_time 407
+[pid = 17288] Create noise in us: start 1462253449690329 end 1462253449711852 interval 80015 noise 21523 start_v 1246593 end_v 1268108 interval_v 79975 noise_v 21515 extra_time 634
+[pid = 19709] Create noise in us: start 1462253449689590 end 1462253449711114 interval 78469 noise 21524 start_v 1247204 end_v 1268718 interval_v 78429 noise_v 21514 extra_time 61

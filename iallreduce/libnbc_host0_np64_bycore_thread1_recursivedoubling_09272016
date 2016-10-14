@@ -1,0 +1,59 @@
+ benchmarks to run Iallreduce 
+#------------------------------------------------------------
+#    Intel (R) MPI Benchmarks 4.0 Update 1, MPI-NBC part  
+#------------------------------------------------------------
+# Date                  : Wed Oct  5 20:02:56 2016
+# Machine               : x86_64
+# System                : Linux
+# Release               : 4.7.5-1.el6.elrepo.x86_64
+# Version               : #1 SMP Sat Sep 24 11:59:14 EDT 2016
+# MPI Version           : 3.1
+# MPI Thread Environment: MPI_THREAD_MULTIPLE
+
+
+# New default behavior from Version 3.2 on:
+
+# the number of iterations per message size is cut down 
+# dynamically when a certain run time (per message size sample) 
+# is expected to be exceeded. Time limit is defined by variable 
+# "SECS_PER_SAMPLE" (=> IMB_settings.h) 
+# or through the flag => -time 
+  
+
+
+# Calling sequence was: 
+
+# /home/dycz0fx/program/imb/src/IMB-NBC Iallreduce -npmin 64 -iter 1000 -time 100
+#                                      
+
+# Minimum message length in bytes:   0
+# Maximum message length in bytes:   4194304
+#
+# MPI_Datatype                   :   MPI_BYTE 
+# MPI_Datatype for reductions    :   MPI_FLOAT
+# MPI_Op                         :   MPI_SUM  
+#
+#
+
+# List of Benchmarks to run:
+
+# Iallreduce
+
+#------------------------------------------------------------------------------------------
+# Benchmarking Iallreduce 
+# #processes = 64 
+#------------------------------------------------------------------------------------------
+       #bytes #repetitions t_ovrl[usec] t_pure[usec]  t_CPU[usec]   overlap[%]      defects
+            0          960         0.82         0.10         0.70         0.00         0.00
+            4          960      1262.98       708.10       710.64        21.92         0.00
+            8          960      1252.53       685.69       684.48        17.16         0.00
+           16          960      1237.00       709.41       708.28        25.47         0.00
+           32          960      1194.04       646.55       646.76        15.35         0.00
+           64          960      1265.38       688.77       690.10        16.45         0.00
+          128          960      1323.43       706.29       738.14        16.39         0.00
+          256          960      1556.97       847.31       891.53        20.40         0.00
+          512          960      1858.11       994.31      1034.24        16.48         0.00
+         1024          960      2362.69      1271.74      1326.21        17.74         0.00
+         2048          960      3976.37      2189.14      2269.48        21.25         0.00
+         4096          896      6710.93      3595.32      3676.60        15.26         0.00
+         8192          832     10510.29      5542.11      5600.52        11.29         0.00
